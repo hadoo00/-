@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 
 const Util = require('discord.js');
 
@@ -318,14 +318,14 @@ client.on('message', message => {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**برفكس البوت (!)**')
-        .addField('=xplay', 'لتشغيل اغنية')
-        .addField('=xjoin', 'دخول رومك الصوتي')
-        .addField('=xdisconnect', 'الخروج من رومك الصوتي')
-        .addField('=xskip', 'تخطي الأغنية')
-        .addField('=xpause', 'ايقاف الاغنية مؤقتا')
-        .addField('=xresume', 'تكملة الاغنية')
-        .addField('=xqueue', 'اظهار قائمة التشغيل')
-        .addField('=xnp', 'اظهار الاغنية اللي انت مشغلها حاليا')
+        .addField('play', 'لتشغيل اغنية')
+        .addField('join', 'دخول رومك الصوتي')
+        .addField('disconnect', 'الخروج من رومك الصوتي')
+        .addField('skip', 'تخطي الأغنية')
+        .addField('pause', 'ايقاف الاغنية مؤقتا')
+        .addField('resume', 'تكملة الاغنية')
+        .addField('queue', 'اظهار قائمة التشغيل')
+        .addField('np', 'اظهار الاغنية اللي انت مشغلها حاليا')
         .setFooter('(general_commands) لاظهار الاوامر العامة')
       message.channel.send(helpEmbed);
     }
